@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhib Ali | Front End Developer</title>
+    <title>Document</title>
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAFrUExURUdwTMrb6sbj48rc6pCwxMrc6h9adR5adau7zB9adcnb6r/Q4cvW6Ku8zR5YcxtSbRtSdh5bc627zKq7zCBbdRFFWcrb6qu7zB1Wb4anuxVKYBxVbcHS4tPd6eHq9N/p8yBbb3rg8+tjdB9HWll9iy5JXNxhcllPYrBbbDtcUcirOB9adB5Ycs3a59Lg7d3n8hNHWszX2+/y9DtmdhVHWOW7Mx9MVhVMXxhQZHba7RtUaHDS5YLs/xNIXFCjtjZJXR5GWulicyRPVYKdp6S4wBpTZkxMYGnH26JYaiVHWyBRY6S4v0xzgsSoOChSVMleb2mJlhtMYERsfNGwNjRgcYqjrYKeqERtfBFFWBtNYKSWPh5MVrLCyVdsTCFSZCFRZE9nTc+uNk10gx9GWvDz9C5VU6ybPWOFkjBWU2BwShxGWqBYahlJV+dic8eqOClIW1hOYT5eUDhKXbBabJaPQDpcURZHWLihOh1GWsAI97EAAAAUdFJOUwD+CZFnxMtV3t3uXCx6VBwcVFpaFA9ULgAAARVJREFUOMtjYKACEGDjxAHY+MEKBEVwAj6wAnYRHSmsQEeEHapAQhQrkEBWoOIjGhLg5WyAS4GKUZBoTGigoQtuBeHGKfGRht64rUgyTheNC8NpRURCbGpWgbq6uhsOBSZRaZlFxRoaGh64rBDN0NTULDXB7U3Rci0trbxCPApyzMzKRCuUQcBB1NbCHENBoqlpSX6uEgg42tvZWGIoIBTUor7B0dlqamr+ou6KIGCNocDJTzRZVVXVU9RVAQSsSLNCWxor0IYrwAkgClgkcQIWsAJWMZyAFSTPw4hbASMPUAEznKsvDwX6cCFmBgYmLhhHTw4O9GBiXEwM3DIwoCsLB7pwQW4GXnG8gJdBiAMvEKY8awMApCRVwumfIIkAAAAASUVORK5CYII=">
     <!-- Link Swiper's CSS -->
     <link
       rel="stylesheet"
@@ -36,6 +35,11 @@
 
       .swiper-pagination-bullet {
         background-color: #23b9eb;
+      }
+      legend{
+        color: red;
+        font-style: italic;
+        font-size: large;
       }
     </style>
     <script src="./matter.js" defer></script>
@@ -172,19 +176,21 @@
           </svg>
           <div class="relative ml-4 md:ml-12">
             <h1
-              class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-12"
-            >
+              class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-12">
+            <em>
               Muhib Ali
+              </em>
             </h1>
             <p
               class="pointer-events-none font-['Merriweather'] italic my-4 md:my-8"
             >
               MERN Stack Developer
             </p>
-            <button
+            <button onclick="OpenMe"
               class="bg-[#4595eb] py-2 px-5 rounded font-extrabold bg-gradient-to-l from-[#1595b6] to-[#1f2667e6] relative hover:scale-110 ease-in-out duration-100 group"
-            >
+                id="openDialogButton">
               About Me
+              
 
               <svg
                 xmlns:dc="http://purl.org/dc/elements/1.1/"
@@ -202,6 +208,7 @@
                 viewBox="0 0 100 100"
                 class="absolute top-1/2 -translate-y-1/2 -right-7 group-hover:-right-8 ease-in-out duration-100"
               >
+             
                 <g transform="translate(0,-952.36218)">
                   <path
                     style="
@@ -222,13 +229,28 @@
                     visibility="visible"
                     display="inline"
                     overflow="visible"
-                  />
-                </g>
+                  >
+                  </path>
+                  </g>
+                
               </svg>
             </button>
           </div>
         </div>
-
+       <!-- Dialog Box -->
+    <fieldset id="dialogBox" class="dialog">
+      <fieldset class="dialog-content">
+        <legend>About Me</legend>
+          <span class="close-button">&times;</span>
+          <p>Hi!  I am a coder I have created this Webpage!.My name is Muhib.I read in secondary grade 1.</p><br>
+          <p> I am pro HTML </p>
+          <progress max="100" value="50" class="Progress"></progress>50%<br>
+          <p>I am pro in CSS</p>
+          <progress max="100" value="75" class="Progress"></progress>75%
+          <h4>I am bad in JavaScript</h4>
+          <progress max="100" value="35" class="Progress"></progress>35%
+      </fieldset>
+  </fieldset>
         <ul class="ml-auto space-y-6 text-[#b0b2c3] absolute right-8">
           <li>
             <a
@@ -924,7 +946,7 @@
                 class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
               >
                 <p class="text-sm md:text-base mb-2">
-                  “Anurag is a talented, committed individual who will leave no
+                  “Muhib Ali is a talented, committed individual who will leave no
                   stone unturned in his pursuit to provide with the best. His
                   attention to detail and in-depth experience in the of web
                   development is indeed commendable. He has exhibited exemplary
@@ -955,7 +977,7 @@
                 class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
               >
                 <p class="text-sm md:text-base mb-2">
-                  “Anurag was a wonderful developer to work with! He anticipated
+                  “Muhib Ali is a wonderful developer to work with! He anticipated
                   everything I need to consider for my website. He also went the
                   extra mile and added details that I hadn't considered! He is
                   helping my business grow, and I will definitely work with him
@@ -985,7 +1007,7 @@
                 class="testimonial-text ml-6 text-left pt-6 md:pt-16 relative"
               >
                 <p class="text-sm md:text-base mb-2">
-                  “I worked with Anurag to make my website. I am speechless by
+                  “I worked with Muhib to make my website. I am speechless by
                   looking at his work ethic and dedication. Working with him was
                   the best decision I made.”
                 </p>
@@ -1021,7 +1043,6 @@
           <label
             for="name"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            style="color:  white;"
             >Name</label
           >
           <div class="relative mb-4">
@@ -1046,13 +1067,11 @@
               name="name"
               class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="Enter your name"
-              required
             />
           </div>
           <label
             for="email"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            style="color: white;"
             >Your Email</label
           >
           <div class="relative mb-4">
@@ -1080,16 +1099,14 @@
               name="email"
               class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full ps-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
               placeholder="name@procodrr.com"
-              required
             />
           </div>
           <label
             for="message"
             class="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
-            style="color: white;"
             >Message</label
           >
-          <div class="relative mb-4"></div>
+          <div class="relative mb-4">
             <div
               class="absolute inset-y-0 start-0 flex items-center ps-3.5 pointer-events-none"
             ></div>
@@ -1098,8 +1115,7 @@
               name="message"
               rows="8"
               class="bg-gray-50 border-2 outline-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#1788ae] focus:border-[#1788ae] block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white"
-            required
-              ></textarea>
+            ></textarea>
           </div>
           <button
             type="submit"
@@ -1238,5 +1254,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
+    <script src="Function.js"></script>
   </body>
 </html>
