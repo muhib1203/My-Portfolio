@@ -1255,6 +1255,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
     <script src="https://cdn/jsdelivr.net/npm/matter-wrap@0.2.0/build/matter-wrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/matter-attractors@0.1.6/build/matter-attractors.min.js"></script>
-    <script src="Function.js"></script>
+    <script>// Get dialog elements
+      const dialogBox = document.getElementById("dialogBox");
+      const openDialogButton = document.getElementById("openDialogButton");
+      const closeButton = document.querySelector(".close-button");
+      
+      // Open dialog when button is clicked
+      openDialogButton.addEventListener("click", () => {
+          dialogBox.style.display = "block";
+      });
+      
+      // Close dialog when close button is clicked
+      closeButton.addEventListener("click", () => {
+          dialogBox.style.display = "none";
+      });
+      
+      // Close dialog when clicking outside the dialog content
+      window.addEventListener("click", (event) => {
+          if (event.target === dialogBox) {
+              dialogBox.style.display = "none";
+          }
+      });
+      </script>
   </body>
 </html>
