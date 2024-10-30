@@ -70,6 +70,56 @@
             stroke-width="10"
           />
         </svg>
+        <div class="typewriter-container">
+
+          <h3 id="demo"></h3>
+
+          <script>
+          var i = 0;
+          var txt1 = 'Supporting Palestine';
+          var txt2 = 'Israel is a terrorist state';
+          var currentTxt = txt1; // Start with the first message
+          var speed = 100;
+          var typing = true; // Flag to control typing and deleting
+          
+          function typeWriter() {
+            var demoElement = document.getElementById("demo");
+          
+            // Set the color based on the current message
+            demoElement.style.color = (currentTxt === txt1) ? "blue" : "red";
+          
+            if (typing) {
+              // Typing forward
+              if (i < currentTxt.length) {
+                demoElement.innerHTML += currentTxt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              } else {
+                // Once typing is done, switch to deleting mode
+                typing = false;
+                setTimeout(typeWriter, speed);
+              }
+            } else {
+              // Backspacing
+              if (i > 0) {
+                demoElement.innerHTML = currentTxt.substring(0, i - 1);
+                i--;
+                setTimeout(typeWriter, speed);
+              } else {
+                // Once deleting is done, switch back to typing mode and alternate messages
+                typing = true;
+                currentTxt = (currentTxt === txt1) ? txt2 : txt1; // Toggle between txt1 and txt2
+                setTimeout(typeWriter, speed);
+              }
+            }
+          }
+          
+          // Start the typewriter effect automatically
+          typeWriter();
+          </script>
+          
+</div>
+
         <div class="flex gap-4 pointer-events-auto">
           <svg
             xmlns="http://www.w3.org/2000/svg"

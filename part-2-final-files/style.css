@@ -40,3 +40,14 @@ legend{
 .dialog{
     border-radius: 100px;
 }
+#demo{
+    font-size: large;
+    color: red;
+    text-shadow: 10vh;
+}
+.typerwriter-container{
+    background-color: azure;
+}
+header{
+    background-color: #fff3;
+}
