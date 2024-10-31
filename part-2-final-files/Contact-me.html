@@ -11,6 +11,7 @@
      box-shadow: 0 0 5px #03f484, 0 0 25px #03f484, 0 0 50px #03f484, 0 0 100px #03f484;
     
     -->
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAYFBMVEUAAAD////CwsKYmJjNzc12dnbl5eVHR0cPDw/z8/OLi4tSUlLFxcXs7Oz7+/s1NTUnJyeenp5paWmFhYW1tbUaGhpcXFytra1vb29MTEyRkZF8fHwvLy8iIiKkpKTV1dWjKeJuAAACMklEQVRoge3Z23KCMBAG4IRyCgQUUUCs5f3fsqJtRXYJG8hOveC/Zr5xliQbFyEZIzZ8w98XD33tWUb7IQn3gigW1omjwJvF9c4e/s1OG3GVLKf7JGoaz9N1thBpPoWr1fZNVxP4ypo8kuC4dmELoVF8xToZZofhnhtbCA/BA1d4APEwcoVHIcD9BXseT+wD3NFa6aMBTnif+0NZHvbzz3nW+K742XuqmHs71ngyOK+zma1six/lS44O8Xhk33TT2rLDL2NbytIVfsohLg2rxgovEFt+OcKxxi5DN3ilMFxVTvAEs019ywZHS24q+tvgrGVhfaEiw/Bs+vn1m6hwhJ+QuuQnR7hoId4aHrc8z0FhDCeLfbOoX+3a+LB1mysHSyYzHeZLcHGtu8ex3tVzFwB7/HazqIKyDKrP2QeX4OQswaOmLYq2mb9T2uL7Rit1r3mulG7MVbfDz8Voj6ri7ApvkZMrM2xRCzztIN2nm/zvR8cr9MC9//jDWrxBO8UjqlmHV9hl6y853o2I+B69Dz0TomuShsdwyjGKh912aXiAi8NgfzBp+ORCeQbr0yQcuZbDXBbiPs69xl+GT2+fYTK4USk40vOxwGsdBa9xbBzYrAn4aeLAGgcODQj4lVTyW9GvC/BPmi0l6Nj/jbOWRQS0dQ4PdYgjw5z0gxCk2cFhDusYinWAxjr64x1aso5beQfFrCNu3uE862cF3g8ikvVTTh/Gj1B9GD+fOcyGb/ib4N8OTx/jtE7i5wAAAABJRU5ErkJggg==">
 
     <style>
         button{
@@ -194,17 +195,21 @@
         <h2>Login Form</h2>
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="user-box">
-                <input type="text" required>
-                <label for="">Username</label>
+                <input type="email" required>
+                <label for="">Email</label>
             </div>
             <div class="user-box">
-                <input type="password" required>
-                <label for="">password</label>
+                <input type="name" required>
+                <label for="">Name/Username</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="message" required>
+                <label for="" style="font-size: small;">Message enter your name in the message as well</label>
             </div>
             <div>
                 <input type="hidden" name="access_key" value="6760f8a6-2291-459d-87de-403d9bc0c447">
             </div>
-            <a href="">
+            <a>
                 <button type="submit">
 
                     <span></span>
@@ -212,7 +217,7 @@
                     <span></span>
                     <span></span>Submit
                 </button>
-            </a>
+                </a>
         </form>
     </div>
 
