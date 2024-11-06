@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Muhib Portfolio | Front End Developer</title>
+    <title>Muhib Ali Portfolio | Front End Developer</title>
     <link rel="stylesheet" href="font.css" />
     <link rel="stylesheet" href="output.css" />
     <link rel="stylesheet" href="style.css" />
@@ -16,6 +16,70 @@
 
     <!-- Demo styles -->
     <style>
+     
+
+.hero-section{
+  display: flex;
+  justify-content: center
+}
+
+.hero-content {
+    position: ;
+    z-index: 1;
+   
+    background-color: transparent;
+    width: fit-content;
+}
+
+.Hportfolio {
+    color: gold;
+    
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.Pportfolio {
+    color:  yellowgreen;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    animation: fadeInUp 2s ease-in-out;
+}
+.Pportfolio {
+    transition: color 0.3s ease;
+}
+
+.Pportfolio:hover {
+    color: aqua;
+}
+
+.Pportfolio:hover::after {
+    content: "Come let's save Palestine.Rise your voice for Palestine.We are the brothers of Palestine";  /* Changes text to "Thank you" on hover */
+    display: block;        /* Forces it to appear on a new line */
+    margin-top: 1px;      /* Optional: Adds some space between the original text and the new text */
+}
+
+
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+      body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+      html{
+        scroll-behavior: smooth;
+      }
       
       .swiper {
         width: 100%;
@@ -49,6 +113,33 @@
         background-color: rgba(3, 57, 90, 0.308);
         
       }
+      .Palestine-flag{
+        width: 100px;
+      }
+      .Israel{
+        width: 100px;
+      }
+      .car{
+    position: absolute;
+    bottom: 10%; /* Position the flag at the bottom */
+    left: -15%;  /* Start position outside of the left side */
+    width: 100px; /* Adjust the size of the flag */
+    animation: moveFlag 5s linear infinite; /* Move the flag animation */
+}
+
+@keyframes moveFlag {
+    0% {
+        left: -15%; /* Start from the left */
+    }
+    50% {
+        left: 50%; /* Move to the center */
+        transform: translateX(-50%); /* Keep it centered */
+    }
+    100% {
+        left: 100%; /* Move to the right */
+    }
+}
+
     </style>
     <script src="./matter.js" defer></script>
   </head>
@@ -72,8 +163,12 @@
         </svg>
         <div class="typewriter-container">
 
-          <h3 id="demo"></h3>
-
+          <h3 id="demo"></h3><div class="Palestine-flag-conainer">
+         <img src="Palestine flag.png" class="Palestine-flag" alt="Palestine-flag"/>
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfXmFq47Ve5w5RyJDbpGj-qetggkVHq6CcgQ&s"
+         class="car"/>
+        
+        </div>
           <script>
           var i = 0;
           var txt1 = 'Supporting Palestine ';
@@ -205,6 +300,7 @@
           </a>
         </div>
       </header>
+      
       <div class="absolute inset-0 hidden md:block" id="wrapper-canvas"></div>
       <div class="flex -mt-10 relative">
         <div class="w-full px-4 max-w-screen-xl mx-auto">
@@ -239,6 +335,15 @@
               </linearGradient>
             </defs>
           </svg>
+          <section class="hero-section">
+
+            <div class="hero-content">
+                <h1 class="Hportfolio">Welcome to My Portfolio</h1>
+                <p class="Pportfolio">Your journey to success starts here.</p>
+                
+            </div>
+          </section>
+        
           <div class="relative ml-4 md:ml-12">
             <h1
               class="pointer-events-none text-4xl md:text-[64px] font-['Spartan'] mr-12">
@@ -315,7 +420,7 @@
           <progress max="100" value="50" class="Progress"></progress>50%<br>
           <p>I am pro in CSS</p>
           <progress max="100" value="75" class="Progress"></progress>75%
-          <h4>I am bad in JavaScript</h4>
+          <h4>I am normal in JavaScript</h4>
           <progress max="100" value="35" class="Progress"></progress>35%
       </fieldset>
   </fieldset>
