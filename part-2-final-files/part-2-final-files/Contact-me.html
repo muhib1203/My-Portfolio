@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact with Muhib Ali</title>
+    <!-- important assets
+    linear-gradient(#141e30, #2a6c56)
+     box-shadow: 0 0 5px #03f484, 0 0 25px #03f484, 0 0 50px #03f484, 0 0 100px #03f484;
+    
+    -->
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAYFBMVEUAAAD////CwsKYmJjNzc12dnbl5eVHR0cPDw/z8/OLi4tSUlLFxcXs7Oz7+/s1NTUnJyeenp5paWmFhYW1tbUaGhpcXFytra1vb29MTEyRkZF8fHwvLy8iIiKkpKTV1dWjKeJuAAACMklEQVRoge3Z23KCMBAG4IRyCgQUUUCs5f3fsqJtRXYJG8hOveC/Zr5xliQbFyEZIzZ8w98XD33tWUb7IQn3gigW1omjwJvF9c4e/s1OG3GVLKf7JGoaz9N1thBpPoWr1fZNVxP4ypo8kuC4dmELoVF8xToZZofhnhtbCA/BA1d4APEwcoVHIcD9BXseT+wD3NFa6aMBTnif+0NZHvbzz3nW+K742XuqmHs71ngyOK+zma1six/lS44O8Xhk33TT2rLDL2NbytIVfsohLg2rxgovEFt+OcKxxi5DN3ilMFxVTvAEs019ywZHS24q+tvgrGVhfaEiw/Bs+vn1m6hwhJ+QuuQnR7hoId4aHrc8z0FhDCeLfbOoX+3a+LB1mysHSyYzHeZLcHGtu8ex3tVzFwB7/HazqIKyDKrP2QeX4OQswaOmLYq2mb9T2uL7Rit1r3mulG7MVbfDz8Voj6ri7ApvkZMrM2xRCzztIN2nm/zvR8cr9MC9//jDWrxBO8UjqlmHV9hl6y853o2I+B69Dz0TomuShsdwyjGKh912aXiAi8NgfzBp+ORCeQbr0yQcuZbDXBbiPs69xl+GT2+fYTK4USk40vOxwGsdBa9xbBzYrAn4aeLAGgcODQj4lVTyW9GvC/BPmi0l6Nj/jbOWRQS0dQ4PdYgjw5z0gxCk2cFhDusYinWAxjr64x1aso5beQfFrCNu3uE862cF3g8ikvVTTh/Gj1B9GD+fOcyGb/ib4N8OTx/jtE7i5wAAAABJRU5ErkJggg==">
+
+    <style>
+        button{
+            background: none;
+            border: none;
+            
+        }
+        html {
+            height: 100%;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: linear-gradient(#141e30, #2a6c56);
+        }
+        
+        .login-box {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            padding: 40px;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.5);
+            box-sizing: border-box;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+        }
+        
+        .login-box h2 {
+            margin: 0 0 30px;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .login-box .user-box {
+            position: relative;
+        }
+        
+        .login-box .user-box input {
+            width: 100%;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            margin-bottom: 30px;
+            outline: none;
+            background: transparent;
+        }
+        
+        .login-box .user-box label {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 10px 0;
+            font-size: 16px;
+            color: #fff;
+            pointer-events: none;
+            transition: 0.5s;
+        }
+        
+        .login-box .user-box input:focus~label,
+        .login-box .user-box input:valid~label {
+            top: -20px;
+            left: 0;
+            color: #03f484;
+            font-size: 12px;
+        }
+        
+        .login-box form a {
+            position: relative;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #03f484;
+            font-size: 16px;
+            text-decoration: none;
+            text-transform: uppercase;
+            overflow: hidden;
+            transition: 0.5s;
+            margin-top: 40px;
+            letter-spacing: 4px;
+        }
+        
+        .login-box a:hover {
+            background: #03f484;
+            color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #03f484, 0 0 25px #03f484, 0 0 50px #03f484, 0 0 100px #03f484;
+        }
+        
+        .login-box a span {
+            position: absolute;
+            display: block;
+        }
+        
+        .login-box a span:nth-child(1) {
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #03f484);
+            animation: btn-anim1 1s linear infinite;
+        }
+        
+        @keyframes btn-anim1 {
+            0% {
+                left: -100%;
+            }
+            50%,
+            100% {
+                left: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(2) {
+            top: -100%;
+            right: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #03f484);
+            animation: btn-anim2 1s linear infinite;
+            animation-delay: 0.25s;
+        }
+        
+        @keyframes btn-anim2 {
+            0% {
+                top: -100%;
+            }
+            50%,
+            100% {
+                top: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(3) {
+            bottom: 0;
+            right: 100%;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(270deg, transparent, #03f484);
+            animation: btn-anim3 1s linear infinite;
+            animation-delay: 0.5s;
+        }
+        
+        @keyframes btn-anim3 {
+            0% {
+                right: -100%;
+            }
+            50%,
+            100% {
+                right: 100%;
+            }
+        }
+        
+        .login-box a span:nth-child(4) {
+            bottom: -100%;
+            left: 0;
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(360deg, transparent, #03f484);
+            animation: btn-anim4 1s linear infinite;
+            animation-delay: 0.75s;
+        }
+        
+        @keyframes btn-anim4 {
+            0% {
+                bottom: -100%;
+            }
+            50%,
+            100% {
+                bottom: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Login Form</h2>
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="user-box">
+                <input type="email" required>
+                <label for="">Email</label>
+            </div>
+            <div class="user-box">
+                <input type="name" required>
+                <label for="">Name/Username</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="message" required>
+                <label for="" style="font-size: small;">Message enter your name in the message as well</label>
+            </div>
+            <div>
+                <input type="hidden" name="access_key" value="6760f8a6-2291-459d-87de-403d9bc0c447">
+            </div>
+            <a>
+                <button type="submit">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>Submit
+                </button>
+                </a>
+        </form>
+    </div>
+
+</body>
+
+</html>
